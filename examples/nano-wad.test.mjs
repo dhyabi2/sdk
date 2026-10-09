@@ -6,8 +6,10 @@ import { describe, it, beforeEach } from 'node:test'
 import assert from 'node:assert/strict'
 import { NanoWad, NanoPolicyError, parseExpiry, NANO } from './nano-wad.mjs'
 
-const TEST_RECIPIENT = 'nano_1yo6c1t64ahfjdw1dxizmbbnpdmbrckwhw9phbg5pdkeubrizga4qhnjmnx7'
-const OTHER_ADDRESS = 'nano_3t6k35gi95xu6tergt6p69ck76ogmitsa8mnijtpxm9fkcm736xtoncuohr3'
+// Neutral placeholder Nano addresses (public-format, not controlled by anyone
+// here) so the example runs offline with no wallet and no spendable funds.
+const TEST_RECIPIENT = 'nano_3bs568q5f47ut6h7u59g5s5g4aktb9md8eq865fzunxxqmhdh7mzowk69tco'
+const OTHER_ADDRESS = 'nano_1zt46nopzx67jy65mwkrp3xpc9z5fkahssz7cwsjaujtprgb7dbgg1zdik1b'
 
 function freshAccount() {
   return { address: 'nano_1q3hqecaw15njt8myo5j9k9by0q6mq1q1q1q1q1q1q1q1q1q1q1q1j8p2ho' }
